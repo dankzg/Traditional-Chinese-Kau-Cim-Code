@@ -11,7 +11,7 @@ export const FortuneDisplay: React.FC<FortuneDisplayProps> = ({ fortune, onReset
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-fade-in">
-      <div className="relative flex flex-col md:flex-row max-w-4xl w-full bg-[#Fdfbf7] rounded-xl overflow-hidden shadow-2xl border-4 border-[#8B0000]">
+      <div className="relative flex flex-col md:flex-row max-w-4xl w-full bg-[#Fdfbf7] rounded-xl shadow-2xl border-4 border-[#8B0000] max-h-[85vh] overflow-y-auto md:overflow-hidden">
         
         {/* Left Side: The Stick (Visual) */}
         <div className="md:w-1/3 bg-[#f4e4bc] flex flex-col items-center justify-center p-8 border-b-4 md:border-b-0 md:border-r-4 border-[#8B0000] border-double">
@@ -31,7 +31,7 @@ export const FortuneDisplay: React.FC<FortuneDisplayProps> = ({ fortune, onReset
         </div>
 
         {/* Right Side: The Interpretation */}
-        <div className="md:w-2/3 p-8 flex flex-col bg-[url('https://www.transparenttextures.com/patterns/rice-paper.png')]">
+        <div className="md:w-2/3 p-8 flex flex-col bg-[url('https://www.transparenttextures.com/patterns/rice-paper.png')] md:overflow-y-auto">
             <h2 className="text-4xl font-serif font-bold text-[#8B0000] mb-6 text-center border-b-2 border-[#8B0000] pb-4">
                 {fortune.title}
             </h2>
